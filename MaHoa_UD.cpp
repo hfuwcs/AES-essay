@@ -1,5 +1,7 @@
 ﻿#include <stdio.h>
+#include <iostream>
 
+using namespace std;
 void showWord(unsigned int w)
 {
     for (int i = 1; i <= 8; i++)
@@ -325,7 +327,6 @@ int main() {
     state = subBytes(state);
     state = ShiftRows(state);
     state = MixColumns(state);*/
-
-
     unsigned int* c = MaHoa(state, key);
+    system("pause");
 }
